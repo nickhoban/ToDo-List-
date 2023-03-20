@@ -17,4 +17,5 @@ function addTaskClicked(event) {
 //Step 3 link to event handler 
 
 addTaskButton.addEventListener('click', onAddTaskClicked);
+todoListContainer.addEventListener('click', onTodolistClicked);
 
