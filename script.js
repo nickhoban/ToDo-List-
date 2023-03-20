@@ -14,6 +14,12 @@ function addTaskClicked(event) {
     todoListContainer.insertAdjacentHTML('afterbegin', taskHTML);
 }
 
+function onTodoListContainerClicked(event) {
+    while (!targetElement.classList.contains("task")){
+        targetElement = targetElement.parentElement;
+    } 
+}
+
 //Step 3 link to event handler 
 
 addTaskButton.addEventListener('click', onAddTaskClicked);
