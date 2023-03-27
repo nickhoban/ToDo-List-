@@ -37,7 +37,7 @@ function onTodoListContainerClicked(event) {
     }
     var taskNameElement = targetElement.querySelector(".task-name")
     var taskName = taskNameElement.innerText
-    
+
     saveTasks(taskName, checkbox.checked)
 }
 
@@ -57,7 +57,7 @@ function showActiveTasks() {
 }
 
 function showAllTasks() {
-    var tasks = document.getElementsByClassName('task'):
+    var tasks = document.getElementsByClassName('task');
     for (let i = 0; i < task.length; i++){
         task[i].stle.display = 'block'
     }
@@ -78,6 +78,17 @@ function showCompletedTasks() {
     }
 }
 
+function renderTasks(){
+    for (i = 0; i< localStorage.length; i++);
+
+        var taskName = localStorage.key(i)
+        var isCompleted = localStorage.getItem(taskName) == "true";
+        var taskHTML = template.replace("<-- TASK_NAME --> , taskName");
+        if (!isCompleted){
+            todoListContainer.insertAdjacentElement('afterbegin, taskHTML');
+        }
+}
+
 //Step 3 link to event handler 
 
 addTaskButton.addEventListener('click', onAddTaskClicked);
@@ -86,3 +97,4 @@ showActiveButton.addEventListener('click', showActiveTasks);
 showAllTaskButton.addEventListener('click', showAllTasks);
 showCompletedBotton.addEventListener('click', showCompletedTasks);
 
+renderTasks()
