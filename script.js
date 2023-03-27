@@ -5,6 +5,8 @@ var todoListContainer = document.getElementById("todo-list");
 var templateContainer = document.getElementById("list-item-template");
 var template = templateContainer.innerHTML
 
+var showActiveButton = document.getElementById("show-active");
+
 //Step 2 write the behavour 
 
 function addTaskClicked(event) {
@@ -24,6 +26,11 @@ function onTodoListContainerClicked(event) {
     } else {
         targetElement.classList.remove("completed")
     }
+}
+
+function showActiveTasks() {
+    var tasks = document.getElementsByClassName('task')
+    console.log(tasks);
 }
 
 //Step 3 link to event handler 
