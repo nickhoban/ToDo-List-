@@ -9,6 +9,11 @@ var showActiveButton = document.getElementById("show-active");
 var showAllTaskButton = document.getElementById("show-all");
 var showCompletedBotton = document.getElementById("show-completed");
 
+
+function saveTasks(name, isCompleted){
+    localStorage.setItem(name, isCompleted);
+}
+
 //Step 2 write the behavour 
 
 function addTaskClicked(event) {
@@ -16,6 +21,8 @@ function addTaskClicked(event) {
     newTaskInput.value ="";
     var taskHTML = template.replace("<!-- TASK_NAME -->", taskName);
     todoListContainer.insertAdjacentHTML('afterbegin', taskHTML);
+
+    saveTasks(taskName,false)
 }
 
 function onTodoListContainerClicked(event) {
@@ -28,6 +35,10 @@ function onTodoListContainerClicked(event) {
     } else {
         targetElement.classList.remove("completed");
     }
+    var taskNameElement = targetElement.querySelector(".task-name")
+    var taskName = taskNameElement.innerText
+    
+    saveTasks(taskName, checkbox.checked)
 }
 
 function showActiveTasks() {
