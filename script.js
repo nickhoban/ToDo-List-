@@ -22,19 +22,31 @@ function onTodoListContainerClicked(event) {
     } 
     var checkbox = targetElement.querySelector(".checkbox");
     if(checkbox.checked){
-        targetElement.classList.add("completed")
+        targetElement.classList.add("completed");
     } else {
-        targetElement.classList.remove("completed")
+        targetElement.classList.remove("completed");
     }
 }
 
 function showActiveTasks() {
     var tasks = document.getElementsByClassName('task')
-    console.log(tasks);
+    for (let i = 0; i < tasks.length; i++){
+        if (tasks[i].classList.contains("completed")){
+            //Get the document you want to hide
+            var element = task[i]
+
+            //Set the diplsay property to "none"
+            task[i].style.display = "none";
+        } else {
+            task[i].style.display = "block";
+        }
+    }
+    
 }
 
 //Step 3 link to event handler 
 
 addTaskButton.addEventListener('click', onAddTaskClicked);
 todoListContainer.addEventListener('click', onTodolistClicked);
+showActiveButton.addEventListener('click', showActiveTasks)
 
