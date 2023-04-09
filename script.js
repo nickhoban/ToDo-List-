@@ -2,9 +2,9 @@
 var addTaskButton = document.getElementById("add-task");
 var newTaskInput = document.getElementById("task-input");
 var todoListContainer = document.getElementById("todo-list");
+
 var templateContainer = document.getElementById("list-item-template");
 var template = templateContainer.innerHTML
-
 var showActiveButton = document.getElementById("show-active");
 var showAllTaskButton = document.getElementById("show-all");
 var showCompletedBotton = document.getElementById("show-completed");
