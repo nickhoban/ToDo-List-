@@ -9,33 +9,34 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<h1>My Todo List</h1>
-<form>
-  <label>
-    Task Name:
-    <input id="task-input" type="text" placeholder="Do assignment">
-  </label>
-  <button type="button" id="add-task">
-    Add Task
-  </button>
-</form>
-<ul id="todo-list">
-</ul>
-
-<button type="button" id="show-all">All</button>
-<button type="button" id="show-active">Active</button>
-<button type="button" id="show-completed">Completed</button>
-
-<script type="text/template" id="list-item-template">
-  <li class="task">
+<body>
+  <h1>My Todo List</h1>
+  <form>
     <label>
-      <input class="checkbox" type="checkbox">
-      <!-- TASK_NAME -->
+      Task Name:
+      <input id="task-input" type="text" placeholder="Do assignment">
     </label>
-  </li>
-</script>
+    <button type="button" id="add-task">
+      Add Task
+    </button>
+  </form>
+  <ul id="todo-list">
+  </ul>
 
-<script src="script.js"></script>
+  <button type="button" id="show-all">All</button>
+  <button type="button" id="show-active">Active</button>
+  <button type="button" id="show-completed">Completed</button>
+
+  <script type="text/template" id="list-item-template">
+    <li class="task">
+      <label>
+        <input class="checkbox" type="checkbox">
+        <!-- TASK_NAME -->
+      </label>
+    </li>
+  </script>
+
+  <script src="script.js"></script>
 
 </body>
 
