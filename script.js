@@ -56,13 +56,13 @@ function showActiveTasks() {
 
 function showAllTasks() {
     var tasks = document.getElementsByClassName('task');
-    for (let i = 0; i < task.length; i++){
-        task[i].stle.display = 'block'
+    for (let i = 0; i < tasks.length; i++){
+        tasks[i].stle.display = 'block'
     }
 }
 
 function showCompletedTasks() {
-    var tasks = document.getElementsByClassName('task')
+    var tasks = document.getElementsByClassName('task');
     for (let i = 0; i < tasks.length; i++){
         if (tasks[i].classList.contains("completed")){
             //Get the document you want to hide
