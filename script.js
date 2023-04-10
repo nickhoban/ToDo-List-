@@ -34,15 +34,11 @@ function onTodoListContainerClicked(event){
     } 
     var checkbox = targetElement.querySelector(".checkbox");
 
-    checkbox.checked ? targetElement.classList.add("completed") : targetElement.classList.remove("completed");
-
-  /*  if(checkbox.checked){
-    
     if(checkbox.checked){
         targetElement.classList.add("completed")
     } else {
         targetElement.classList.remove("completed")
-    } */
+    } 
 
     var taskNameElement = targetElement.querySelector(".task-name")
     var taskName = taskNameElement.innerText
