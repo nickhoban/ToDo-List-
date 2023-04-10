@@ -26,7 +26,7 @@ function onAddTaskClicked(event) {
     saveTasks(taskName,false)
 }
 
-function onTodoListContainerClicked(event) {
+function onTodoListContainerClicked(event){
     while (!targetElement.classList.contains("task")){
         targetElement = targetElement.parentElement;
     } 
