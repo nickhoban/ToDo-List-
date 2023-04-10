@@ -41,7 +41,7 @@ function onTodoListContainerClicked(event){
     } 
 
     var taskNameElement = targetElement.querySelector(".task-name")
-    var taskName = taskNameElement.innerText
+    var taskName = taskNameElement.innerText;
 
    saveTasks(taskName, checkbox.checked)
 }
