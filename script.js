@@ -100,4 +100,4 @@ showActiveButton.addEventListener('click', showActiveTasks);
 showAllTaskButton.addEventListener('click', showAllTasks);
 showCompletedBotton.addEventListener('click', showCompletedTasks);
 
-renderTasks()
+renderTasks();
