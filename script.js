@@ -78,8 +78,8 @@ function showCompletedTasks() {
             tasks[i].style.display = "block";
         }
     }
-}
 
+   
 function renderTasks(){
     for (i = 0; i< localStorage.length; i++);
 
@@ -89,6 +89,7 @@ function renderTasks(){
         if (!isCompleted){
             todoListContainer.insertAdjacentElement('afterbegin, taskHTML');
         }
+    }
 }
 
 //Step 3 link to event handler 
