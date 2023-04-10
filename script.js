@@ -44,7 +44,7 @@ function onTodoListContainerClicked(event){
 
 function showActiveTasks() {
     var tasks = document.getElementsByClassName('task')
-    console.log(task);
+    console.log(tasks);
 
     for (let i = 0; i < tasks.length; i++){
         if (tasks[i].classList.contains("completed")){
