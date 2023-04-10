@@ -40,8 +40,8 @@ function onTodoListContainerClicked(event){
         targetElement.classList.remove("completed")
     } 
 
-    var taskNameElement = targetElement.querySelector(".task-name")
-    var taskName = taskNameElement.innerText;
+   // var taskNameElement = targetElement.querySelector(".task-name")
+    //var taskName = taskNameElement.innerText;
 
    saveTasks(taskName, checkbox.checked)
 }
