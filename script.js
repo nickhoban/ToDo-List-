@@ -69,9 +69,9 @@ function showCompletedTasks() {
             var element = task[i]
 
             //Set the diplsay property to "none"
-            task[i].style.display = "none";
+            tasks[i].style.display = "none";
         } else {
-            task[i].style.display = "block";
+            tasks[i].style.display = "block";
         }
     }
 }
