@@ -16,7 +16,7 @@ function saveTasks(name, isCompleted){
 
 //Step 2 write the behavour 
 
-function addTaskClicked(event) {
+function onAddTaskClicked(event) {
     var taskName = newTaskInput.value;
     newTaskInput.value ="";
     var taskHTML = template.replace("<!-- TASK_NAME -->", taskName);
