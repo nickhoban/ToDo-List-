@@ -70,7 +70,7 @@ function showCompletedTasks() {
     for (let i = 0; i < tasks.length; i++){
         if (tasks[i].classList.contains("completed")){
             //Get the document you want to hide
-            var element = task[i]
+            var element = tasks[i]
 
             //Set the diplsay property to "none"
             tasks[i].style.display = "none";
