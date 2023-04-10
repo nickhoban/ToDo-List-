@@ -44,14 +44,9 @@ function onTodoListContainerClicked(event){
 
 function showActiveTasks() {
     var tasks = document.getElementsByClassName('task')
-    console.log(tasks);
-
     for (let i = 0; i < tasks.length; i++){
         if (tasks[i].classList.contains("completed")){
-            //Get the document you want to hide
-            var element = task[i]
-
-            //Set the diplsay property to "none"
+            //Set the display property to "none"
             task[i].style.display = "none";
         } else {
             task[i].style.display = "block";
