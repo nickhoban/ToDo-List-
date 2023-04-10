@@ -26,7 +26,7 @@ function onAddTaskClicked(event) {
     saveTasks(taskName,false)
 }
 
-function onTodoListContainerClicked(event){
+function onTodoListClicked(event){
     var targetElement = event.target;
 
     while (!targetElement.classList.contains("task")){
@@ -95,7 +95,7 @@ function renderTasks(){
 //Step 3 link to event handler 
 
 addTaskButton.addEventListener('click', onAddTaskClicked);
-todoListContainer.addEventListener('click', onTodoListContainerClicked);
+todoListContainer.addEventListener('click', onTodoListClicked);
 showActiveButton.addEventListener('click', showActiveTasks);
 showAllTaskButton.addEventListener('click', showAllTasks);
 showCompletedBotton.addEventListener('click', showCompletedTasks);
