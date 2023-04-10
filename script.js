@@ -27,10 +27,13 @@ function onAddTaskClicked(event) {
 }
 
 function onTodoListContainerClicked(event){
+    var targetElement = event.target;
+
     while (!targetElement.classList.contains("task")){
         targetElement = targetElement.parentElement;
     } 
     var checkbox = targetElement.querySelector(".checkbox");
+    
     if(checkbox.checked){
         targetElement.classList.add("completed")
     } else {
