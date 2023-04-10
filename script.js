@@ -47,9 +47,9 @@ function showActiveTasks() {
     for (let i = 0; i < tasks.length; i++){
         if (tasks[i].classList.contains("completed")){
             //Set the display property to "none"
-            task[i].style.display = "none";
+            tasks[i].style.display = "none";
         } else {
-            task[i].style.display = "block";
+            tasks[i].style.display = "block";
         }
     }
 }
