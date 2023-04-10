@@ -36,11 +36,12 @@ function onTodoListContainerClicked(event){
     } else {
         targetElement.classList.remove("completed")
     }
-}
-   // var taskNameElement = targetElement.querySelector(".task-name")
-  //  var taskName = taskNameElement.innerText
 
- //   saveTasks(taskName, checkbox.checked)
+    var taskNameElement = targetElement.querySelector(".task-name")
+    var taskName = taskNameElement.innerText
+
+   saveTasks(taskName, checkbox.checked)
+}
 
 function showActiveTasks() {
     var tasks = document.getElementsByClassName('task')
