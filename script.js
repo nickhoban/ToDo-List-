@@ -2,9 +2,10 @@
 var addTaskButton = document.getElementById("add-task");
 var newTaskInput = document.getElementById("task-input");
 var todoListContainer = document.getElementById("todo-list");
-
 var templateContainer = document.getElementById("list-item-template");
 var template = templateContainer.innerHTML
+
+
 var showActiveButton = document.getElementById("show-active");
 var showAllTaskButton = document.getElementById("show-all");
 var showCompletedBotton = document.getElementById("show-completed");
@@ -92,7 +93,7 @@ function renderTasks(){
 //Step 3 link to event handler 
 
 addTaskButton.addEventListener('click', onAddTaskClicked);
-todoListContainer.addEventListener('click', onTodolistClicked);
+todoListContainer.addEventListener('click', onTodoListContainerClicked);
 showActiveButton.addEventListener('click', showActiveTasks);
 showAllTaskButton.addEventListener('click', showAllTasks);
 showCompletedBotton.addEventListener('click', showCompletedTasks);
