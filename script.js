@@ -57,7 +57,7 @@ function showActiveTasks() {
 function showAllTasks() {
     var tasks = document.getElementsByClassName('task');
     for (let i = 0; i < tasks.length; i++){
-        tasks[i].stle.display = 'block'
+        tasks[i].style.display = 'block'
     }
 }
 
